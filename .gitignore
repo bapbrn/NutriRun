@@ -1,0 +1,25 @@
+# Environnement
+.env
+venv/
+.venv/
+
+# Profil utilisateur
+profile.yaml
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Cache FAISS (généré automatiquement)
+faiss_index/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

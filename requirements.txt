@@ -1,0 +1,41 @@
+# ============================================================
+# NutriRun — Dépendances Python
+# ============================================================
+# Installation : pip install -r requirements.txt
+#
+# Note : sur Mac Intel (x86_64), PyTorch est limité à la version 2.2.2.
+# Les contraintes de version ci-dessous assurent la compatibilité.
+# Sur Mac Apple Silicon ou Linux, ces contraintes restent valides.
+
+# === LLM (Ollama) ===
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-ollama>=0.2.0
+langchain-huggingface>=0.1.0
+
+# === Agent (LangGraph) ===
+langgraph>=0.2.0
+
+# === RAG ===
+faiss-cpu>=1.8.0
+sentence-transformers>=3.0.0,<4.0.0
+transformers>=4.41.0,<5.0.0
+
+# === Compatibilité NumPy / PyTorch (Mac Intel) ===
+numpy>=1.26.0,<2.0.0
+
+# === Parsing documents ===
+pypdf>=4.0.0
+
+# === Données structurées ===
+pydantic>=2.0.0
+pyyaml>=6.0.0
+
+# === Interface ===
+gradio>=4.0.0
+
+# === Strava API (optionnel) ===
+requests>=2.31.0
+
+# === Configuration ===
+python-dotenv>=1.0.0

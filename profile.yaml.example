@@ -1,0 +1,67 @@
+# ============================================================
+# NutriRun — Profil utilisateur
+# ============================================================
+#
+# 1) Copie ce fichier en profile.yaml  --> cp profile.yaml.example profile.yaml
+#
+# 2) Remplis profil.yaml avec TES INFOS PERSONNELLES 
+#
+# ============================================================
+
+
+# --- Données physiques ---
+
+sexe: "homme"            # homme / femme
+age: 25                  # en années
+poids_kg: 70             # en kg
+taille_cm: 175           # en cm
+
+
+
+# --- Données d'entraînement ---
+
+sport: "course"          # course / trail / les_deux
+vma_kmh: 15.0            # Vitesse Maximale Aérobie en km/h (optionnel)
+fcmax_bpm: 195           # Fréquence cardiaque maximale (optionnel, sinon 220 - âge)
+seances_par_semaine: 4   # nombre de séances par semaine
+
+
+
+# --- Mode de vie ---
+
+# Facteur d'activité HORS entraînement :
+#   1.2  = sédentaire (bureau, peu de marche)
+#   1.3  = légèrement actif (étudiant, déplacements à pied)
+#   1.55 = modérément actif (travail physique léger)
+#   1.725 = très actif (travail physique intense)
+
+facteur_activite: 1.3
+
+#Remarque : bien faire attention que c'est HORS entraînement. Seuls les personnes qui ont un métier physique intense doivent mettre 1.725.
+
+
+
+# --- Préférences alimentaires ---
+
+regime: "omnivore"       # omnivore / vegetarien / vegan / sans_gluten / sans_lactose
+allergies: []            # ex: ["arachides", "fruits de mer"]
+aliments_exclus: []      # ex: ["brocoli", "tofu"] — aliments que tu n'aimes pas
+
+
+
+# --- Objectif (optionnel) ---
+
+# Laisse vide si pas d'objectif de course en particulier.
+
+objectif_course: ""          # ex: "Marathon de Paris", "Trail des Templiers 40K"
+objectif_date: ""            # ex: "2026-06-13"
+objectif_distance_km: 0      # distance de la course cible
+objectif_denivele_m: 0       # D+ de la course cible
+
+
+
+# --- Objectif nutritionnel ---
+
+# maintien / perte_de_poids / prise_de_masse
+
+objectif_nutritionnel: "maintien"
